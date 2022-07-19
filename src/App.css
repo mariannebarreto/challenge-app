@@ -39,3 +39,9 @@
 .read-the-docs {
   color: #888;
 }
+
+ body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(103, 75, 13, 1) 56%, rgba(0, 0, 0, 1) 100%);
+  margin:0;
+ }
