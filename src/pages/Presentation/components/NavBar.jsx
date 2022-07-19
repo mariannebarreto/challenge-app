@@ -1,33 +1,4 @@
-/* eslint-disable no-tabs */
 /* eslint-disable no-mixed-spaces-and-tabs */
-/* import { AppBar, Grid, Button } from '@mui/material';
-
-// eslint-disable-next-line react/prop-types
-function NavBar({ drawerWidth = 400 }) {
-	return (
-		<AppBar
-			position="fixed"
-			sx={{
-				width: { sm: `calc(100% - ${drawerWidth}px)` },
-				ml: { sm: `${drawerWidth}px` },
-			}}
-		>
-			<Grid
-				container
-				direction="row"
-				justifyContent="space-between"
-				sx={{
-					height: { sm: 80 },
-				}}
-			>
-				<Button variant="contained">Login</Button>
-				<Button variant="contained">Create account</Button>
-			</Grid>
-		</AppBar>
-	);
-}
-
-export default NavBar; */
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -38,30 +9,20 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import HiveIcon from '@mui/icons-material/Hive';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Services', 'Q&A', 'Products'];
 
 function NavBar() {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
-	const [anchorElUser, setAnchorElUser] = React.useState(null);
 
 	const handleOpenNavMenu = (event) => {
 		setAnchorElNav(event.currentTarget);
 	};
-	const handleOpenUserMenu = (event) => {
-		setAnchorElUser(event.currentTarget);
-	};
 
 	const handleCloseNavMenu = () => {
 		setAnchorElNav(null);
-	};
-
-	const handleCloseUserMenu = () => {
-		setAnchorElUser(null);
 	};
 
 	return (
@@ -123,6 +84,9 @@ function NavBar() {
 							))}
 						</Menu>
 					</Box>
+
+					{/* ----- RESPONSIVE MENU BAR */}
+
 					<HiveIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
 					<Typography
 						variant="h5"
@@ -154,33 +118,43 @@ function NavBar() {
 						))}
 					</Box>
 
-					<Box sx={{ flexGrow: 0 }}>
-						<Tooltip title="Open settings">
-							<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }} />
-						</Tooltip>
-						<Menu
-							sx={{ mt: '45px' }}
-							id="menu-appbar"
-							anchorEl={anchorElUser}
-							anchorOrigin={{
-								vertical: 'top',
-								horizontal: 'right',
-							}}
-							keepMounted
-							transformOrigin={{
-								vertical: 'top',
-								horizontal: 'right',
-							}}
-							open={Boolean(anchorElUser)}
-							onClose={handleCloseUserMenu}
-						>
-							{settings.map((setting) => (
-								<MenuItem key={setting} onClick={handleCloseUserMenu}>
-									<Typography textAlign="center">{setting}</Typography>
-								</MenuItem>
-							))}
-						</Menu>
-					</Box>
+					<Typography
+						variant="h6"
+						noWrap
+						component="a"
+						href="/Login"
+						sx={{
+							mr: 2,
+							display: { xs: 'none', md: 'flex' },
+							fontFamily: 'monospace',
+							fontWeight: 700,
+							letterSpacing: '.2rem',
+							color: 'inherit',
+							textDecoration: 'none',
+							fontSize: 16,
+						}}
+					>
+						LOGIN
+					</Typography>
+					<Typography
+						variant="h6"
+						noWrap
+						component="a"
+						href="/Register"
+						sx={{
+							mr: 2,
+							ml: 4,
+							display: { xs: 'none', md: 'flex' },
+							fontFamily: 'monospace',
+							fontWeight: 700,
+							letterSpacing: '.2rem',
+							color: 'inherit',
+							textDecoration: 'none',
+							fontSize: 16,
+						}}
+					>
+						REGISTER
+					</Typography>
 				</Toolbar>
 			</Container>
 		</AppBar>
