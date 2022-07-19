@@ -1,43 +1,30 @@
-import {
-  AppBar, Grid, IconButton, Toolbar, Typography,
-} from '@mui/material';
-import { LogoutOutlined, MenuOutlined } from '@mui/icons-material';
+/* eslint-disable no-tabs */
+/* eslint-disable no-mixed-spaces-and-tabs */
+import { AppBar, Grid, Button } from '@mui/material';
 
 // eslint-disable-next-line react/prop-types
-function NavBar({ drawerWidth = 240 }) {
-  return (
-    <AppBar
-      position="fixed"
-      sx={{ width: { sm: `calc(100% - ${drawerWidth}px)` }, ml: { sm: `${drawerWidth}px` } }}
-    >
-      <Toolbar>
-        <IconButton
-          color="inherit"
-          edge="start"
-          sx={{ mr: 2, display: { sm: 'none' } }}
-        >
-          <MenuOutlined />
-        </IconButton>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Typography variant="h6" noWrap component="div">
-            {' '}
-            JournalApp
-            {' '}
-          </Typography>
-
-          <IconButton color="error">
-            <LogoutOutlined />
-          </IconButton>
-        </Grid>
-      </Toolbar>
-    </AppBar>
-  );
+function NavBar({ drawerWidth = 400 }) {
+	return (
+		<AppBar
+			position="fixed"
+			sx={{
+				width: { sm: `calc(100% - ${drawerWidth}px)` },
+				ml: { sm: `${drawerWidth}px` },
+			}}
+		>
+			<Grid
+				container
+				direction="row"
+				justifyContent="space-between"
+				sx={{
+					height: { sm: 80 },
+				}}
+			>
+				<Button variant="contained">Login</Button>
+				<Button variant="contained">Create account</Button>
+			</Grid>
+		</AppBar>
+	);
 }
 
 export default NavBar;

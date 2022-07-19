@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.1",
+    "@mui/system": "^5.9.1",
     "axios": "^0.27.2",
     "core-js": "^3.23.5",
     "eslint-config": "^0.1.0",
