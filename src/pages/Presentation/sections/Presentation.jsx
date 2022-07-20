@@ -1,10 +1,18 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-tabs */
 /* eslint-disable react/prop-types */
-import { Toolbar, Grid, Typography, Button, TextField } from '@mui/material';
+import {
+	Toolbar,
+	Grid,
+	Typography,
+	Button,
+	TextField,
+	InputAdornment,
+} from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
 import { Box } from '@mui/system';
 import NavBar from '../components/NavBar';
-import frontline from '../../../assets/images/frontline.jpg';
+import homeBank from '../../../assets/images/homeBank.jpg';
 
 function Presentation({ children }) {
 	return (
@@ -76,13 +84,13 @@ function Presentation({ children }) {
 				>
 					<div>
 						<img
-							src={frontline}
-							alt="frontline workers"
+							src={homeBank}
+							alt="digital bank"
 							width="400px"
 							height="auto"
 							align="right"
 							style={{
-								borderRadius: '70px',
+								borderRadius: '40px',
 							}}
 						/>
 					</div>
@@ -96,7 +104,7 @@ function Presentation({ children }) {
 						mt: '30px',
 						width: '400px',
 						pr: '10px',
-						ml: '25%',
+						ml: '15px',
 					}}
 				>
 					<TextField
@@ -105,6 +113,13 @@ function Presentation({ children }) {
 						placeholder="yourmail@provider.com"
 						size="large"
 						fullWidth
+						InputProps={{
+							startAdornment: (
+								<InputAdornment position="start">
+									<EmailIcon />
+								</InputAdornment>
+							),
+						}}
 					/>
 				</Grid>
 				<Grid
@@ -118,7 +133,7 @@ function Presentation({ children }) {
 						variant="contained"
 						size="large"
 						style={{
-							borderRadius: '20px',
+							borderRadius: '15px',
 							height: '80px',
 							backgroundColor: 'rgba(15, 10, 0, 0.62)',
 							fontSize: '17px',
@@ -128,17 +143,17 @@ function Presentation({ children }) {
 					</Button>
 				</Grid>
 			</Grid>
-
 			{/* ----SMALL VERSION */}
 			<Grid
 				container
 				spacing={2}
 				sx={{
-					mt: '60px',
+					mt: '90px',
 					pl: '50px',
 					pr: '50px',
 					display: { xs: 'flex', md: 'none' },
 					direction: 'column',
+					mb: '125px',
 				}}
 			>
 				<Grid item md={6}>
@@ -173,7 +188,7 @@ function Presentation({ children }) {
 								letterSpacing: '.2rem',
 								color: 'white',
 								textDecoration: 'none',
-								fontSize: '20px',
+								fontSize: '18px',
 								mb: '40px',
 							}}
 						>
@@ -181,13 +196,18 @@ function Presentation({ children }) {
 							place.
 						</Typography>
 					</div>
-					<Grid item>
+					<Grid
+						item
+						sx={{
+							mb: '20px',
+						}}
+					>
 						<Button
 							variant="contained"
 							fullWidth
 							style={{
-								borderRadius: '20px',
-								height: '80px',
+								borderRadius: '12px',
+								height: '50px',
 								mt: '25px',
 								backgroundColor: 'rgba(15, 10, 0, 0.62)',
 								fontSize: '17px',
