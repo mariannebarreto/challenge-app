@@ -10,7 +10,7 @@ import CreditCard from '../pages/LandingPages/credit/CreditCard';
 import HomeLoan from '../pages/LandingPages/home-loan/HomeLoan';
 import DepositAcc from '../pages/LandingPages/deposit/DepositAcc';
 import Market from '../pages/LandingPages/market/Market';
-import Presentation from '../pages/Presentation/sections/Presentation';
+import Welcome from '../pages/Presentation/Welcome';
 import ShowActivity from '../pages/LandingPages/deposit/ShowActivity';
 
 function AppRouter() {
@@ -18,7 +18,7 @@ function AppRouter() {
 
 	return (
 		<Routes>
-			<Route path="/" element={<Presentation />} />
+			<Route path="/" element={<Welcome />} />
 			<Route path="/Login" element={<Login />} />
 			<Route path="/Register" element={<Register />} />
 			<Route path="/About" element={<About />} />

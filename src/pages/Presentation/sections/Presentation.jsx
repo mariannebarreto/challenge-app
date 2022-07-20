@@ -25,6 +25,7 @@ function Presentation({ children }) {
 					pr: '50px',
 					display: { xs: 'none', md: 'flex' },
 					direction: 'column',
+					mb: '50px',
 				}}
 			>
 				<Grid item md={6}>
