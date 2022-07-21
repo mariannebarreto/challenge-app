@@ -2,7 +2,6 @@
 /* eslint-disable no-tabs */
 /* eslint-disable no-mixed-spaces-and-tabs */
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   Typography,
   TextField,
@@ -10,11 +9,6 @@ import {
 } from '@mui/material';
 
 export default function Form() {
-  const navigate = useNavigate();
-
-  const handleNavRegister = () => {
-    navigate('/RegisterExtra');
-  };
   return (
     <section>
 
@@ -44,7 +38,7 @@ export default function Form() {
 							  textDecoration: 'none',
         }}
       >
-        Opening your account is easier than ever - less than 5 mins
+        Welcome back!
 
       </Typography>
 
@@ -74,7 +68,6 @@ export default function Form() {
           variant="filled"
         />
         <br />
-
         <TextField
           style={{
             width: '500px',
@@ -103,14 +96,14 @@ export default function Form() {
         />
         <br />
         <br />
-        <Button variant="contained" color="primary" onClick={handleNavRegister}>
-          Create Account
+        <Button variant="contained" color="primary">
+          Login
         </Button>
         <Typography
           variant="p"
           noWrap
           component="a"
-          href="/Login"
+          href="/Register"
 
           sx={{
 
@@ -123,7 +116,7 @@ export default function Form() {
             textAlign: 'right',
           }}
         >
-          Already have an account? Login
+          Dont have an account? Register
 
         </Typography>
       </form>

@@ -2,13 +2,13 @@
 /* eslint-disable no-tabs */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Toolbar, Grid, Typography } from '@mui/material';
+import { Toolbar, Grid } from '@mui/material';
 import { Box } from '@mui/system';
-import Form from './Form';
+import FormLogin from './FormLogin';
 import NavBar from '../../pages/Presentation/components/NavBar';
 import openAcc from '../../assets/images/openAcc.png';
 
-function LayoutOpenAcc({ children }) {
+function LayoutLogin({ children }) {
   return (
     <section>
       <NavBar>
@@ -50,10 +50,10 @@ function LayoutOpenAcc({ children }) {
           }}
         >
 
-          <Form />
+          <FormLogin />
         </Grid>
       </Grid>
     </section>
   );
 }
-export default LayoutOpenAcc;
+export default LayoutLogin;

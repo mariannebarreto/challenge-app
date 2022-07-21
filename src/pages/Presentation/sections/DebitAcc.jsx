@@ -8,8 +8,8 @@ import debit from '../../../assets/images/debit.jpg';
 function DebitAcc() {
   const navigate = useNavigate();
 
-  const handleNavLogin = () => {
-    navigate('/Login');
+  const handleNavRegister = () => {
+    navigate('/Register');
   };
 
   return (
@@ -111,7 +111,7 @@ function DebitAcc() {
 								  mb: '15px',
 								  ml: '30px',
                 }}
-                onClick={handleNavLogin}
+                onClick={handleNavRegister}
               >
                 Get Started
               </Button>
@@ -200,7 +200,7 @@ function DebitAcc() {
 							  mb: '10px',
 							  mr: '15px',
               }}
-              onClick={handleNavLogin}
+              onClick={handleNavRegister}
             >
               Get Started
             </Button>
