@@ -47,24 +47,31 @@ export const googleSignIn = async (app) => {
 
   console.log(app);
   await googlePop(auth, provider).then((isAuth) => {
-    navigate('/Presentation');
+    navigate('/ShowActivity');
     console.log(isAuth);
   });
 };
 
 // creating a collection with users data---------------------------------//
-export async function registeredUser(uid, name, email, photo) {
+export async function registeredUser(uid, name, email, adress, phone, city, state) {
   try {
     const userCollection = collection(db, 'users');
     console.log(uid);
     console.log(name);
     console.log(email);
-    console.log(photo);
+    console.log(adress);
+    console.log(phone);
+    console.log(city);
+    console.log(state);
     await setDoc(doc(userCollection, uid), {
       uid,
       name,
       email,
-      photo,
+      adress,
+      phone,
+      city,
+      state,
+
     });
   } catch (error) {
     console.log('user dont saved', error);

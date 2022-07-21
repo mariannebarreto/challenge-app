@@ -1,7 +1,8 @@
 import React from 'react';
+import LayoutOpenAcc from '../components/LayoutOpenAcc';
 
 function Login() {
-	return <div>Login</div>;
+	return <LayoutOpenAcc />;
 }
 
 export default Login;

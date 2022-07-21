@@ -1,15 +1,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-tabs */
 /* eslint-disable react/prop-types */
-import {
-	Toolbar,
-	Grid,
-	Typography,
-	Button,
-	TextField,
-	/* InputAdornment, */
-} from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
+import { Toolbar, Grid, Typography, Button, TextField } from '@mui/material';
 import { Box } from '@mui/system';
 import NavBar from '../components/NavBar';
 import homeBank from '../../../assets/images/homeBank.jpg';

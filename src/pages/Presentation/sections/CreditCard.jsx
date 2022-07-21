@@ -1,8 +1,15 @@
 import React from 'react';
 import { Grid, Typography, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import bank from '../../../assets/images/bank.jpg';
 
 function CreditCard() {
+	const navigate = useNavigate();
+
+	const handleNavLogin = () => {
+		navigate('/Login');
+	};
+
 	return (
 		<section
 			style={{
@@ -69,6 +76,7 @@ function CreditCard() {
 								mb: '15px',
 								ml: '30px',
 							}}
+							onClick={handleNavLogin}
 						>
 							Learn more
 						</Button>
