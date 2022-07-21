@@ -7,7 +7,7 @@ const laosTheme = createTheme({
 			main: '#212121',
 		},
 		secondary: {
-			main: '#8e24aa',
+			main: '#543884',
 		},
 		error: {
 			main: red.A400,

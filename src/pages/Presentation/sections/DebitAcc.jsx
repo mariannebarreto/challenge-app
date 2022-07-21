@@ -1,12 +1,12 @@
 import React from 'react';
 import { Grid, Typography, Button } from '@mui/material';
-import loanBudget from '../../../assets/images/loanBudget.jpg';
+import debit from '../../../assets/images/debit.jpg';
 
-function HomeLoan() {
+function DebitAcc() {
 	return (
 		<section
 			style={{
-				backgroundImage: `url(${loanBudget})`,
+				backgroundImage: `url(${debit})`,
 				height: '100vh',
 				backgroundSize: 'cover',
 			}}
@@ -20,6 +20,7 @@ function HomeLoan() {
 					pr: '50px',
 					display: { xs: 'none', md: 'flex' },
 					direction: 'column',
+					mb: '50px',
 				}}
 			>
 				<Grid
@@ -37,11 +38,11 @@ function HomeLoan() {
 								mr: 2,
 								fontWeight: 800,
 								letterSpacing: '.2rem',
-								color: 'white',
+								color: 'black',
 								textDecoration: 'none',
 							}}
 						>
-							BUILD YOUR FUTURE
+							START SAVING AND TRANSACTING INSTANTLY.
 						</Typography>
 					</div>
 				</Grid>
@@ -54,7 +55,6 @@ function HomeLoan() {
 				>
 					<div
 						style={{
-							p: '2',
 							backgroundColor: 'rgba(28, 20, 3, 0.84)',
 							textAlign: 'left',
 							borderRadius: '20px',
@@ -64,7 +64,7 @@ function HomeLoan() {
 						<Typography
 							variant="h6"
 							sx={{
-								p: 3,
+								p: 1,
 								mr: 2,
 								ml: 2,
 								fontWeight: 500,
@@ -73,25 +73,39 @@ function HomeLoan() {
 								textDecoration: 'none',
 							}}
 						>
-							Whether you're looking to build, purchase, or refinance, we can
-							work with you to establish terms suited to your unique situation.
+							<ul>
+								<li>
+									No everyday banking fees. You work hard for your money, you
+									should keep it.
+								</li>
+								<li>
+									Pay your way and transact instantly using Apple Pay or Google
+									Pay or with your Hive Visa debit card .
+								</li>
+								<li>
+									Budget better with auto categorisation of your spending.
+								</li>
+								<li>
+									Earn 5% cash back on essential purchases like groceries,
+									public transport, and bill payments.
+								</li>
+							</ul>
+							<Button
+								variant="contained"
+								size="large"
+								sx={{
+									borderRadius: '10px',
+									height: '50px',
+									backgroundColor: 'rgba(161, 120, 26, 0.91)',
+									fontSize: '17px',
+									width: '200px',
+									mb: '15px',
+									ml: '30px',
+								}}
+							>
+								Get Started
+							</Button>
 						</Typography>
-						<Button
-							variant="contained"
-							size="large"
-							sx={{
-								borderRadius: '10px',
-								height: '50px',
-								backgroundColor: 'rgba(161, 120, 26, 0.91)',
-								fontSize: '17px',
-								width: '200px',
-								mt: '15px',
-								mb: '15px',
-								ml: '30px',
-							}}
-						>
-							Tell me more
-						</Button>
 					</div>
 				</Grid>
 			</Grid>
@@ -131,7 +145,7 @@ function HomeLoan() {
 						<Typography
 							variant="h5"
 							sx={{
-								mb: '50px',
+								mb: '10px',
 								textAlign: 'center',
 								fontWeight: 800,
 								letterSpacing: '.2rem',
@@ -139,7 +153,7 @@ function HomeLoan() {
 								textDecoration: 'none',
 							}}
 						>
-							BUILD YOUR FUTURE
+							START SAVING AND TRANSACTING INSTANTLY.
 						</Typography>
 						<Typography
 							variant="p"
@@ -154,8 +168,14 @@ function HomeLoan() {
 								textDecoration: 'none',
 							}}
 						>
-							Whether you're looking to build, purchase, or refinance, we can
-							work with you to establish terms suited to your unique situation.
+							<ul>
+								<li>No everyday banking fees.</li>
+								<li>Pay your way and transact instantly.</li>
+								<li>
+									Budget better with auto categorisation of your spending.
+								</li>
+								<li>Earn 5% cash back on essential purchases.</li>
+							</ul>
 						</Typography>
 						<Button
 							variant="contained"
@@ -168,9 +188,10 @@ function HomeLoan() {
 								width: '200px',
 								mt: '20px',
 								mb: '10px',
+								mr: '15px',
 							}}
 						>
-							Tell me more
+							Get Started
 						</Button>
 					</div>
 				</Grid>
@@ -179,4 +200,4 @@ function HomeLoan() {
 	);
 }
 
-export default HomeLoan;
+export default DebitAcc;
