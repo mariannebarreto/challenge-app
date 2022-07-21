@@ -1,7 +1,8 @@
 import React from 'react';
+import LayoutLogin from '../components/LayoutLogin';
 
 function Login() {
-	return <div>Login</div>;
+  return <LayoutLogin />;
 }
 
 export default Login;
