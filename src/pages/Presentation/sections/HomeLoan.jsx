@@ -1,12 +1,12 @@
 import React from 'react';
 import { Grid, Typography, Button } from '@mui/material';
-import homeLoan from '../../../assets/images/homeLoan.jpg';
+import loanBudget from '../../../assets/images/loanBudget.jpg';
 
 function HomeLoan() {
 	return (
 		<section
 			style={{
-				backgroundImage: `url(${homeLoan})`,
+				backgroundImage: `url(${loanBudget})`,
 				height: '100vh',
 				backgroundSize: 'cover',
 			}}
@@ -112,33 +112,10 @@ function HomeLoan() {
 					item
 					md={6}
 					sx={{
-						mt: '100px',
-					}}
-				>
-					<div>
-						<Typography
-							variant="h5"
-							sx={{
-								p: '3',
-								mb: '2',
-								textAlign: 'center',
-								fontWeight: 800,
-								letterSpacing: '.2rem',
-								color: 'black',
-								textDecoration: 'none',
-							}}
-						>
-							BUILD YOUR FUTURE
-						</Typography>
-					</div>
-				</Grid>
-				<Grid
-					item
-					md={6}
-					sx={{
-						mt: '50px',
-						p: '2',
+						mt: '92px',
 						alignItems: 'center',
+						mr: '10px',
+						textAlign: 'center',
 					}}
 				>
 					<div
@@ -147,17 +124,31 @@ function HomeLoan() {
 							textAlign: 'center',
 							borderRadius: '10px',
 							height: 'auto',
-							p: '3',
 							width: 'auto',
+							padding: '10px',
 						}}
 					>
 						<Typography
+							variant="h5"
+							sx={{
+								mb: '50px',
+								textAlign: 'center',
+								fontWeight: 800,
+								letterSpacing: '.2rem',
+								color: 'white',
+								textDecoration: 'none',
+							}}
+						>
+							BUILD YOUR FUTURE
+						</Typography>
+						<Typography
 							variant="p"
 							sx={{
-								p: '2',
+								paddingBottom: '10px',
+								pr: '10px',
 								mr: '10px',
 								ml: '10px',
-								fontWeight: 500,
+								fontWeight: 400,
 								letterSpacing: '.2rem',
 								color: 'white',
 								textDecoration: 'none',
@@ -166,23 +157,22 @@ function HomeLoan() {
 							Whether you're looking to build, purchase, or refinance, we can
 							work with you to establish terms suited to your unique situation.
 						</Typography>
+						<Button
+							variant="contained"
+							size="large"
+							sx={{
+								borderRadius: '10px',
+								height: '50px',
+								backgroundColor: 'rgba(161, 120, 26, 0.91)',
+								fontSize: '17px',
+								width: '200px',
+								mt: '20px',
+								mb: '10px',
+							}}
+						>
+							Tell me more
+						</Button>
 					</div>
-					<Button
-						variant="contained"
-						size="large"
-						sx={{
-							borderRadius: '10px',
-							height: '50px',
-							backgroundColor: 'rgba(161, 120, 26, 0.91)',
-							fontSize: '17px',
-							width: '200px',
-							mt: '25px',
-							mb: '15px',
-							ml: '30px',
-						}}
-					>
-						Tell me more
-					</Button>
 				</Grid>
 			</Grid>
 		</section>

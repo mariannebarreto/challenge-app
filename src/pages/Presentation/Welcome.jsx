@@ -5,6 +5,8 @@ import DebitAcc from './sections/DebitAcc';
 import CreditCard from './sections/CreditCard';
 import HomeLoan from './sections/HomeLoan';
 import CommunityLoan from './sections/CommunityLoan';
+import Market from './sections/Market';
+import GetTheApp from './sections/GetTheApp';
 
 function Welcome() {
 	return (
@@ -15,6 +17,8 @@ function Welcome() {
 			<CreditCard />
 			<HomeLoan />
 			<CommunityLoan />
+			<Market />
+			<GetTheApp />
 		</section>
 	);
 }

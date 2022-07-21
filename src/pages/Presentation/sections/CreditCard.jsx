@@ -115,33 +115,10 @@ function CreditCard() {
 					item
 					md={6}
 					sx={{
-						mt: '100px',
-					}}
-				>
-					<div>
-						<Typography
-							variant="h5"
-							sx={{
-								p: '3',
-								mb: '2',
-								textAlign: 'center',
-								fontWeight: 800,
-								letterSpacing: '.2rem',
-								color: 'black',
-								textDecoration: 'none',
-							}}
-						>
-							EXPLORE THE POSSIBILITIES
-						</Typography>
-					</div>
-				</Grid>
-				<Grid
-					item
-					md={6}
-					sx={{
-						mt: '50px',
-						p: '2',
+						mt: '92px',
 						alignItems: 'center',
+						mr: '10px',
+						textAlign: 'center',
 					}}
 				>
 					<div
@@ -150,17 +127,31 @@ function CreditCard() {
 							textAlign: 'center',
 							borderRadius: '10px',
 							height: 'auto',
-							p: '3',
 							width: 'auto',
+							padding: '10px',
 						}}
 					>
 						<Typography
+							variant="h5"
+							sx={{
+								mb: '50px',
+								textAlign: 'center',
+								fontWeight: 800,
+								letterSpacing: '.2rem',
+								color: 'white',
+								textDecoration: 'none',
+							}}
+						>
+							EXPLORE THE POSSIBILITIES
+						</Typography>
+						<Typography
 							variant="p"
 							sx={{
-								p: '2',
+								paddingBottom: '10px',
+								pr: '10px',
 								mr: '10px',
 								ml: '10px',
-								fontWeight: 500,
+								fontWeight: 400,
 								letterSpacing: '.2rem',
 								color: 'white',
 								textDecoration: 'none',
@@ -171,23 +162,22 @@ function CreditCard() {
 							sheer number of choices. Learn about what we have on HIVE and find
 							the perfect fit for you.
 						</Typography>
+						<Button
+							variant="contained"
+							size="large"
+							sx={{
+								borderRadius: '10px',
+								height: '50px',
+								backgroundColor: 'rgba(161, 120, 26, 0.91)',
+								fontSize: '17px',
+								width: '200px',
+								mt: '20px',
+								mb: '10px',
+							}}
+						>
+							Learn more
+						</Button>
 					</div>
-					<Button
-						variant="contained"
-						size="large"
-						sx={{
-							borderRadius: '10px',
-							height: '50px',
-							backgroundColor: 'rgba(161, 120, 26, 0.91)',
-							fontSize: '17px',
-							width: '200px',
-							mt: '25px',
-							mb: '15px',
-							ml: '30px',
-						}}
-					>
-						Learn more
-					</Button>
 				</Grid>
 			</Grid>
 		</section>

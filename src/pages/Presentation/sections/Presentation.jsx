@@ -7,7 +7,7 @@ import {
 	Typography,
 	Button,
 	TextField,
-	InputAdornment,
+	/* InputAdornment, */
 } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import { Box } from '@mui/system';
@@ -116,13 +116,6 @@ function Presentation({ children }) {
 							br: '15px',
 						}}
 						fullWidth
-						InputProps={{
-							startAdornment: (
-								<InputAdornment position="start">
-									<EmailIcon />
-								</InputAdornment>
-							),
-						}}
 					/>
 				</Grid>
 				<Grid

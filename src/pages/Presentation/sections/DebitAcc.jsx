@@ -45,26 +45,6 @@ function DebitAcc() {
 							START SAVING AND TRANSACTING INSTANTLY.
 						</Typography>
 					</div>
-					{/* <Typography
-						variant="h6"
-						sx={{
-							mt: '50px',
-							ml: '40px',
-							p: '10px',
-							fontWeight: 500,
-							letterSpacing: '.2rem',
-							color: 'white',
-							textDecoration: 'none',
-							backgroundColor: 'rgba(28, 20, 3, 0.84)',
-							borderRadius: '10px',
-							textAlign: 'left',
-							height: '60px',
-							width: 'auto',
-						}}
-					>
-						<EmojiEventsIcon />
-
-					</Typography> */}
 				</Grid>
 				<Grid
 					item
@@ -129,66 +109,60 @@ function DebitAcc() {
 					</div>
 				</Grid>
 			</Grid>
+
 			{/* ----SMALL VERSION */}
 
 			<Grid
 				container
 				spacing={2}
 				sx={{
-					mt: '70px',
 					pl: '50px',
 					pr: '40px',
 					display: { xs: 'flex', md: 'none' },
 					direction: 'column',
-					mb: '125px',
 				}}
 			>
 				<Grid
 					item
 					md={6}
 					sx={{
-						mt: '50px',
-					}}
-				>
-					<div>
-						<Typography
-							variant="h5"
-							sx={{
-								pl: 3,
-								mr: 2,
-								textAlign: 'center',
-								fontWeight: 800,
-								letterSpacing: '.2rem',
-								color: 'black',
-								textDecoration: 'none',
-							}}
-						>
-							START SAVING AND TRANSACTING INSTANTLY.
-						</Typography>
-					</div>
-				</Grid>
-				<Grid
-					item
-					md={6}
-					sx={{
-						mt: '20px',
+						mt: '92px',
+						alignItems: 'center',
+						mr: '10px',
+						textAlign: 'center',
 					}}
 				>
 					<div
 						style={{
 							backgroundColor: 'rgba(28, 20, 3, 0.84)',
-							textAlign: 'left',
+							textAlign: 'center',
 							borderRadius: '10px',
 							height: 'auto',
-							pr: '1',
+							width: 'auto',
+							padding: '10px',
 						}}
 					>
 						<Typography
+							variant="h5"
+							sx={{
+								mb: '10px',
+								textAlign: 'center',
+								fontWeight: 800,
+								letterSpacing: '.2rem',
+								color: 'white',
+								textDecoration: 'none',
+							}}
+						>
+							START SAVING AND TRANSACTING INSTANTLY.
+						</Typography>
+						<Typography
 							variant="p"
 							sx={{
-								mr: '15px',
-								ml: 2,
-								fontWeight: 500,
+								paddingBottom: '10px',
+								pr: '10px',
+								mr: '10px',
+								ml: '10px',
+								fontWeight: 400,
 								letterSpacing: '.2rem',
 								color: 'white',
 								textDecoration: 'none',
@@ -202,22 +176,23 @@ function DebitAcc() {
 								</li>
 								<li>Earn 5% cash back on essential purchases.</li>
 							</ul>
-							<Button
-								variant="contained"
-								size="large"
-								sx={{
-									borderRadius: '10px',
-									height: '50px',
-									backgroundColor: 'rgba(161, 120, 26, 0.91)',
-									fontSize: '17px',
-									width: '200px',
-									mb: '15px',
-									ml: '30px',
-								}}
-							>
-								Get Started
-							</Button>
 						</Typography>
+						<Button
+							variant="contained"
+							size="large"
+							sx={{
+								borderRadius: '10px',
+								height: '50px',
+								backgroundColor: 'rgba(161, 120, 26, 0.91)',
+								fontSize: '17px',
+								width: '200px',
+								mt: '20px',
+								mb: '10px',
+								mr: '15px',
+							}}
+						>
+							Get Started
+						</Button>
 					</div>
 				</Grid>
 			</Grid>
