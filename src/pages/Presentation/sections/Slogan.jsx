@@ -12,7 +12,6 @@ function Slogan() {
 					height: '200px',
 					justifyContent: 'center',
 					display: { xs: 'none', md: 'flex' },
-					mb: '180px',
 				}}
 			>
 				<Typography

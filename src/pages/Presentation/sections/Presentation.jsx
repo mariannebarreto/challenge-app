@@ -33,7 +33,7 @@ function Presentation({ children }) {
 					pr: '50px',
 					display: { xs: 'none', md: 'flex' },
 					direction: 'column',
-					mb: '50px',
+					mb: '100px',
 				}}
 			>
 				<Grid item md={6}>
@@ -77,20 +77,20 @@ function Presentation({ children }) {
 				</Grid>
 				<Grid
 					item
-					md={5}
+					md={6}
 					sx={{
-						mt: '40px',
+						mt: '-3px',
 					}}
 				>
 					<div>
 						<img
 							src={homeBank}
 							alt="digital bank"
-							width="400px"
+							width="500px"
 							height="auto"
 							align="right"
 							style={{
-								borderRadius: '40px',
+								borderRadius: '70px 0 0 70px',
 							}}
 						/>
 					</div>
@@ -100,11 +100,11 @@ function Presentation({ children }) {
 					sx={{
 						backgroundColor: 'white',
 						height: '80px',
-						borderRadius: '10px',
 						mt: '30px',
 						width: '400px',
 						pr: '10px',
 						ml: '15px',
+						br: '20px',
 					}}
 				>
 					<TextField
@@ -112,6 +112,9 @@ function Presentation({ children }) {
 						type="email"
 						placeholder="yourmail@provider.com"
 						size="large"
+						sx={{
+							br: '15px',
+						}}
 						fullWidth
 						InputProps={{
 							startAdornment: (

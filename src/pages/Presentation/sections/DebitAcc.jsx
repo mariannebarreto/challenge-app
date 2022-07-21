@@ -15,7 +15,7 @@ function DebitAcc() {
 				container
 				spacing={4}
 				sx={{
-					mt: '100px',
+					mt: '120px',
 					pl: '50px',
 					pr: '50px',
 					display: { xs: 'none', md: 'flex' },
